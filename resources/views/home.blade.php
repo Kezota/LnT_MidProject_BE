@@ -2,7 +2,9 @@
 @section('title', "PT ChipiChapa")
 
 @section('content')
-    <div class="container container-fluid">
-        <h1>Home Page</h1>
-    </div>
+    <section class="container container-fluid">
+        <h1>PT ChipiChapa</h1>
+        <p>Welcome to PT ChipiChapa's Website for Mid Project LNT BE</p>
+        <p>Created by Kezia :)</p>
+    </section>
 @endsection

@@ -8,6 +8,7 @@
             <div class="navbar-nav">
                 <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
                 <a class="nav-link {{ request()->is('viewEmployee') ? 'active' : '' }}" href="/viewEmployee">View Employee</a>
+                <a class="nav-link {{ request()->is('addEmployee') ? 'active' : '' }}" href="/addEmployee">Add Employee</a>
             </div>
         </div>
     </div>
