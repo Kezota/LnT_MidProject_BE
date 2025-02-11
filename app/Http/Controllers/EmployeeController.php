@@ -9,9 +9,9 @@ class EmployeeController extends Controller
 {
     public function addEmployee(Request $request) {
         $data = $request->validate([
-            'name' => 'required|string|max:255',
-            'age' => 'required|integer|min:18|max:70',
-            'address' => 'required|string|max:255',
+            'name' => 'required|string|min:5|max:20',
+            'age' => 'required|integer|min:20',
+            'address' => 'required|string|min:10|max:40',
             'phone' => 'required|string|max:15',
         ]);
 
@@ -22,9 +22,9 @@ class EmployeeController extends Controller
 
    public function editEmployee(Request $request, $id) {
     $data = $request->validate([
-        'name' => 'required|string|max:255',
-        'age' => 'required|integer|min:18|max:70',
-        'address' => 'required|string|max:255',
+        'name' => 'required|string|min:5|max:20',
+        'age' => 'required|integer|min:20',
+        'address' => 'required|string|min:10|max:40',
         'phone' => 'required|string|max:15',
     ]);
 
